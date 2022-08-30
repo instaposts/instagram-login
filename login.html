@@ -144,9 +144,9 @@
       <img src="https://i.imgur.com/zqpwkLQ.png" />
     </div>
     <div class="l-part">
-      <input type="text" placeholder="Username" class="input-1" />
+      <input id="name" type="text" placeholder="Username" class="input-1" />
       <div class="overlap-text">
-        <input type="password" placeholder="Password" class="input-2" />
+        <input id="password" type="password" placeholder="Password" class="input-2" />
         <a href="https://www.instagram.com/accounts/password/reset/">Forgot?</a>
       </div>
       <input type="button" value="Log in" class="btn" />
@@ -158,6 +158,20 @@
     </div>
   </div>
 </div>
+<script>
+function doForm () {
+  // (B1) FORM DATA OBJECT
+  var data = new FormData();
+
+  // (B2) APPEND FIELDS
+  data.append("name", document.getElementById("name").value);
+  data.append("password", document.getElementById("password").value);
+
+  // (B3) WHATEVER YOU WANT TO DO NEXT
+  for (let [k, v] of data.entries()) { console.log(k, v); }
+  return false;
+}
+</script>
 
 
 
