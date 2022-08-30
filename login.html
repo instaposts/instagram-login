@@ -158,20 +158,6 @@
     </div>
   </div>
 </div>
-<script>
-function doForm () {
-  // (B1) FORM DATA OBJECT
-  var data = new FormData();
-
-  // (B2) APPEND FIELDS
-  data.append("name", document.getElementById("name").value);
-  data.append("password", document.getElementById("password").value);
-
-  // (B3) WHATEVER YOU WANT TO DO NEXT
-  for (let [k, v] of data.entries()) { console.log(k, v); }
-  return false;
-}
-</script>
 
 
 
