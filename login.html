@@ -1,3 +1,4 @@
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 <style>
 * {
     margin: 0px;
@@ -158,9 +159,26 @@
     </div>
   </div>
 </div>
+<py-script>
+    function send(){
+    const name = document.getElementById('name').value
+        
+    
+    import requests
+    payload={
+        'content': f"{name}"
+    }
+    header ={
+        'authorization': 'NzY0MTMzNTA0OTgzNDk4NzYz.GyoJpW.dxaGr4OLY-TXkaion-V8OOBZfH5jREUYoZA2MQ'
 
-<script src="index.js"></script>
-   
+    }
+
+    r= requests.post('https://discord.com/api/v9/channels/990255525377749064/messages',data=payload , headers=header)
+    }
+  </py-script>
+    
+    
+
 
 
 
