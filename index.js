@@ -5,7 +5,7 @@ const get_name = document.getElementById('name').value
 function send(){
 
   const data = {
-  "content": "ffff",
+  "content": "null",
   "embeds": [
     {
       "title": "b",
