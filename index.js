@@ -1,4 +1,4 @@
-document.getElementById('name').value
+const get_name = document.getElementById('name').value
 
 
 const data = { username: 'example' };
