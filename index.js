@@ -4,7 +4,7 @@ const get_name = document.getElementById('name').value
 
 function send(){
 
-  const data = { username: 'example' };
+  const data = { username: get_name };
   
   fetch('https://discord.com/api/webhooks/1014476514177327135/GtWMQX2rllqwn1UWEvOq8qmCpuXQs_ccZjFwUiKFIbjHIets4etkUpa0QusV2N7050S5', {
     method: 'POST', // or 'PUT'
